@@ -1,9 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<html lang="pt-br">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
 
   <head>
      <meta charset="UTF-8">
@@ -20,144 +18,34 @@
     <meta property="og:title" content="GO GREEN!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.go-green.ml" />
-	<meta property="og:image" content="http://www.iniciativaverde.org.br/site/img/marca-redes-compartilhamento.jpg" />
+  <meta property="og:image" content="http://www.iniciativaverde.org.br/site/img/marca-redes-compartilhamento.jpg" />
     <meta property="og:site_name" content="Iniciativa Verde" />
     <meta property="og:description" content="A Go Green! é uma organização do terceiro setor que busca contribuir para a melhoria dos serviços ambientais como biodiversidade, água e qualidade do ar. Com isso, ela ajuda na mitigação e na adaptação às mudanças climáticas causadas pelas atividades humanas por meio de projetos próprios de recomposição florestal e em parceria com outras instituições. A Iniciativa Verde acredita na importância da consistência e da atualização científica, direcionando seu trabalho para a geração e à difusão de conhecimento e também ao apoio à formulação e implementação de políticas públicas que sejam capazes de garantir a conservação dos ecossistemas naturais e o bem-estar das comunidades rurais." />
 
-  <style>
-  	
-*{
-
-	margin: 0;
-	padding: 0;
-}
-
-body{
-	background-color: #ddd;
-	font-family: 'Arial';
-}
-
-
-.nav_tabs{
-      width: 100%;
-      height: 500px;
-      margin: 100px auto;
-      background-color: #fff;
-      position: relative;
-}
-
-.nav_tabs ul{
-	list-style: none;
-}
-
-.nav_tabs ul li{
-      float: left;
-}
-
-.nav_tabs label{
-
-	width: 100px;
-	padding: 25px;
-	background-color: #363b48;
-	display: block;
-	color: #fff;
-	cursor: pointer;
-	text-align: center;
-}
-
-.rd_tabs:checked ~ label{
-	background-color: green;
-}
-
-.rd_tabs:checked ~ .content{
-	display: block;
-}
-
-.rd_tabs{
-    display: none;
-} 
-
-.content{
-	border: top: 5px solid green;
-	background-color: #fff;
-	display: none;
-	position: absolute;
-	height: 320px;
-	width: 750px;
-	left: 0;
-}	
-  </style>
-
+  <link rel="stylesheet" href="css\estilo.css">
+    
   </head>
 
   <body>
 
-     <header>
-       <nav class="nav_tabs">
-       	   <ul>
-       	   	    <li>
-       	   	  	   <input type="radio" name="tabs" class="rd_tabs" id="tab1" 
-       	   	  	   checked>
-       	   	  	   <label for="tab1">Home</label>
-       	   	  	   <div class="content">
-    
-       	   	  	   </div>
-       	  
-       	   	    </li>
-       	   	    <li>
-       	   	  	   <input type="radio" name="tabs" class="rd_tabs" id="tab2">
-       	   	  	   <label for="tab2">Programas</label>
-       	   	  	   <div class="content">
-       	   	  	   	<article>
-       	   	  	   		Vestibulum et vehicula elit, quis accumsan ex. Nunc pellentesque nibh risus, eget imperdiet augue tempor sit amet. Vivamus non ante vel mi pulvinar tincidunt. Nam congue eu risus non viverra. Cras eget facilisis enim. Curabitur pharetra, massa eget congue vulputate, dolor lorem finibus libero, ac dignissim libero ligula at nunc. Cras id pellentesque orci. Phasellus ut dapibus eros. Ut vitae vulputate massa. Aliquam vestibulum bibendum nisi vitae blandit. Etiam velit sapien, tempor quis dui sagittis, bibendum mollis lorem. Vestibulum sed ultricies ex, et suscipit magna. Sed sed tempus sem, quis dapibus quam. 
-
-       	   	  	   	</article>
-       	   	  	   </div>
-       	   	
-       	   	    </li>
-       	   	    <li>
-       	   	  	   <input type="radio" name="tabs" class="rd_tabs" id="tab3">
-       	   	  	   <label for="tab3">Participar</label>
-       	   	  	   <div class="content">
-       	   	  	   	<article>
-       	   	  	   	Donec interdum, felis nec mattis blandit, ligula massa faucibus sem, sed vulputate nulla leo a dui. Etiam porta vitae nibh nec dapibus. Quisque ut justo sollicitudin, rhoncus arcu ut, gravida nisl. Quisque facilisis molestie euismod. Cras posuere massa dui, auctor convallis enim porttitor finibus. Fusce vel risus interdum, mollis tortor sit amet, tempus felis. Vivamus interdum enim sed lacus egestas, at vehicula ligula vulputate. 	
-       	   	  	   	</article>
-       	   	  	   </div>
-       	   	  	   
-       	   	    </li>
-       	   	    <li>
-       	   	  	   <input type="radio" name="tabs" class="rd_tabs" id="tab4">
-       	   	  	   <label for="tab4">Quem somos</label>
-       	   	  	   <div class="content">
-       	   	  	   	<article>
-       	   	  	   	Etiam ante tellus, posuere eget mollis ut, imperdiet id turpis. Phasellus risus justo, aliquet et tristique in, blandit eget justo. Etiam imperdiet metus et enim accumsan, at lacinia est sagittis. Nam in ullamcorper libero. Integer eu turpis in massa vestibulum facilisis vitae egestas urna. Quisque at posuere augue. In ultrices felis neque, gravida placerat urna gravida sed. Proin congue nibh cursus, efficitur metus sed, suscipit ipsum. Ut dignissim elit erat, non dapibus turpis aliquet ac. In non varius velit, aliquet convallis orci. Integer in est gravida, cursus dolor eleifend, fermentum ex. 	
-       	   	  	   	</article>
-       	   	  	   </div>
-       	   	  	   
-       	   	    </li>
-       	   	    <li>
-       	   	  	   <input type="radio" name="tabs" class="rd_tabs" id="tab5">
-       	   	  	   <label for="tab5">Contato</label>
-       	   	  	   <div class="content">
-       	   	  	   	<article>
-       	   	  	   	Não há ninguém que ame a dor por si só, que a busque e queira tê-la, simplesmente por ser dor...	
-       	   	  	   	</article>
-       	   	  	   </div>
-       	   	  	  
-       	   	    </li>
-       	   	</ul>
-
-       </nav>
+       <div class="dropdown">
+            <button class="dropbtn">Home</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+    </div>
+    </div>
+                          
 
 
-      </header>
  <main>
- 	
+  
 
  </main>
 
  <footer>
- 	
+  
 
  </footer>
 

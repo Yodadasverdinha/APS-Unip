@@ -3,25 +3,29 @@
 	margin: 0;
 	padding: 0;
 }
+
 body{
 	background-color: #e6ffe6;
-	font-family: 'Arial';
-}
+    font-family: 'Arial';
+    }
 
-/*aqui começamos a por o menu novo*/
+
+    /*Menu Dropdown*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #3e8e41;
-}
+    }
 
 li {
     float: left;
+    display: inline-block;
 }
 
-li a, .dropbtn {
+/*Edita toda a lista com links do site*/
+li a,.dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -29,9 +33,6 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
 
 li.dropdown {
     display: inline-block;
@@ -40,55 +41,56 @@ li.dropdown {
 .dropbtn {
     background-color: #3e8e41;
     color: white;
-    padding: 16px;
+    padding: 18px;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
+
 .dropdown a {
-    color: #FFF;
+    color: #ffffff;
     text-decoration: none;
     display: block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Conteúdo do dropdown (cores, posição, sombra) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: #2f6a31;
+    min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Links no dropdown */
 .dropdown-content a {
-    color: black;
+    color: #ffffff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+/* Muda a cor do dropdown menu */
+.dropdown-content a:hover {background-color: #3e8e41}
 
-/* Show the dropdown menu on hover */
+/* Menu flutuante */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
+/* Muda a cor da tab quando passa o mouse encima */
 .dropdown:hover .dropbtn {
     background-color: #2f6a31;
 }
 
-
+/* Rodapé */
 footer {
      position: absolute;
      bottom: 0px;
@@ -153,4 +155,7 @@ and (max-width: 769px){
          text-align: center;
      }
 }
-footer a:hover {background-color: #2f6a31}
+
+/* Background do rodapé*/
+footer a:hover 
+    {background-color: #2f6a31}

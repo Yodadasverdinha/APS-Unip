@@ -1,100 +1,268 @@
+/* Documento CSS */
 
-*{
-	margin: 0;
-	padding: 0;
-}
-
-body{
-	background-color: #e6ffe6;
-    font-family: 'Arial';
-    }
+/* Importando fonts do google */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
 
-    /*Menu Dropdown*/
-ul {
-    list-style-type: none;
+/* Estilo do Body. */
+body {
+    background: #e6ffe6;
+    line-height: 32px;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #3e8e41;
+    word-wrap:break-word !important;
+    font-family: 'Open Sans', sans-serif;
     }
 
-li {
-    float: left;
-    display: inline-block;
-}
-
-/*Edita toda a lista com links do site*/
-li a,.dropbtn {
-    display: inline-block;
-    color: white;
+/* Testes de fonts e conteúdos do site. */
+h1 {
+    font-size: 60px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    color: #FFF;
+}   
+
+h3 {
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFF;
 }
 
-
-li.dropdown {
-    display: inline-block;
+h3 a {
+    color: #FFF;
 }
 
-.dropbtn {
-    background-color: #3e8e41;
-    color: white;
-    padding: 18px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+a {
+    color: #FFF;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+h1 {
+    margin-top: 100px;
+    text-align:center;
+    font-size:60px;
+    line-height: 70px;
+    font-family: 'Bree Serif', 'serif';
+    }
+
+/*Termina aqui os testes.*/
+
+
+/* Ajustes de monitor. */
+#container {
+    margin: 0 auto;
+    max-width: 890px;
 }
 
-
-.dropdown a {
-    color: #ffffff;
-    text-decoration: none;
-    display: block;
+p {
+    text-align: center;
 }
 
-/* Conteúdo do dropdown (cores, posição, sombra) */
-.dropdown-content {
+.toggle,
+[id^=drop] {
     display: none;
-    position: absolute;
-    background-color: #2f6a31;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 }
 
-/* Links no dropdown */
-.dropdown-content a {
-    color: #ffffff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+/* background-color para o menu/nav. */
+nav { 
+    margin:0;
+    padding: 0;
+    background-color: #399247;
 }
 
-/* Muda a cor do dropdown menu */
-.dropdown-content a:hover {background-color: #3e8e41}
+/* Teremos o "ul li" "float: left"
+ * precisamos adicionar um clear. */
 
-/* Menu flutuante */
-.dropdown:hover .dropdown-content {
-    display: block;
+nav:after {
+    content:"";
+    display:table;
+    clear:both;
 }
 
-/* Muda a cor da tab quando passa o mouse encima */
-.dropdown:hover .dropbtn {
-    background-color: #2f6a31;
+/* Removendo padding, margin e "list-style" para a "ul",
+ * e adicionando "position:reltive" */
+nav ul {
+    float: left;
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+    
+/* Posicionando a os itens de navegação inline */
+nav ul li {
+    margin: 0px;
+    display:inline-block;
+    float: left;
+    background-color: #399247;
+    }
+
+/* Estilizando os links */
+nav a {
+    display:block;
+    padding:14px 20px;  
+    color:#FFF;
+    font-size:17px;
+    text-decoration:none;
+}
+
+
+nav ul li ul li:hover { background: #006400; }
+
+/* Background color para efeito Hover/Mouse */
+nav a:hover { 
+    background-color: #006400; 
+}
+
+/* Escodendo Dropdowns por Padrão
+ * e colocando a position: absolute */
+nav ul ul {
+    display: none;
+    position: absolute; 
+    /* Deve conter o mesmo número do "line-height" da "nav a" */
+    top: 60px; 
+}
+    
+/*Exibe Dropdowns quando Hover/Mouse */
+nav ul li:hover > ul {
+    display:inherit;
+}
+    
+/* Primeiro Dropdown */
+nav ul ul li {
+    width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+
+/* Secondo e Terceiros Tiers*/
+nav ul ul ul li {
+    position: relative;
+    top:-60px;
+    left:170px; 
+}
+
+    
+/* Coloca o ' +' após as palavras para informar um dropdown */
+li > a:before { content:  '+ '; }
+li > a:only-child:before { content: ''; }
+
+
+/* Media Queries - Adaptação para mobile.
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+    nav {
+        margin: 0;
+    }
+
+    /* Esconder o "Menu" por padrão. */
+    /* Esconde o .toggle  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Estilizando o toggle*/
+    .toggle {
+        display: block;
+        background-color: #399247;
+        padding:14px 20px;  
+        color:#FFF;
+        font-size:17px;
+        text-decoration:none;
+        border:none;
+    }
+
+    .toggle:hover {
+        background-color: #000000;
+    }
+
+    /* Mostra o Dropdown quando clicado */
+    [id^=drop]:checked + ul {
+        display: block;
+    }
+
+    /* Mudando os itens do menu mobile para 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+        }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: #000000;
+    }
+  
+    nav ul li ul li .toggle,
+    nav ul ul a,
+  nav ul ul ul a{
+        padding:14px 20px;  
+        color:#FFF;
+        font-size:17px; 
+    }
+  
+  
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #212121; 
+    }
+
+    /* Esconder Dropdowns por padrão */
+    nav ul ul {
+        float: none;
+        position:static;
+        color: #ffffff;
+        /* Deverá ter o mesmo número do "line-height" da "nav a" */
+    }
+        
+    /* Esconder menus quando hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+        
+    /* Dropdown tier um */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* Deverá ter o mesmo número do "width" da "nav ul ul li" */ 
+
+    }
+
+}
+
+@media all and (max-width : 330px) {
+
+    nav ul li {
+        display:block;
+        width: 94%;
+    }
+
 }
 
 /* Rodapé */
-footer {
+.footer {
      position: absolute;
      bottom: 0px;
      width: 100%;
+     font-size: 15px;
+
 }
 .logotipo {
     width: 100%;
@@ -119,7 +287,7 @@ footer {
 }
 @media only screen and (min-width: 450px)
 and (max-width: 769px){
-    footer {
+    .footer {
         clear: both;
         width: 100%;
      }
@@ -134,7 +302,7 @@ and (max-width: 769px){
      }
 }
 @media only screen and (min-width: 769px) {
-    footer {
+    .footer {
         width: 100%;
         clear: both;
         margin-bottom: 3%;
@@ -155,7 +323,3 @@ and (max-width: 769px){
          text-align: center;
      }
 }
-
-/* Background do rodapé*/
-footer a:hover 
-    {background-color: #2f6a31}

@@ -16,13 +16,13 @@
     <meta name="application-name" content="GO GREEN!" />
     <meta name="description" content="A Go Green! é uma organização do terceiro setor que busca contribuir para a melhoria dos serviços ambientais como biodiversidade, água e qualidade do ar. Com isso, ela ajuda na mitigação e na adaptação às mudanças climáticas causadas pelas atividades humanas por meio de projetos próprios de recomposição florestal e em parceria com outras instituições. A Iniciativa Verde acredita na importância da consistência e da atualização científica, direcionando seu trabalho para a geração e à difusão de conhecimento e também ao apoio à formulação e implementação de políticas públicas que sejam capazes de garantir a conservação dos ecossistemas naturais e o bem-estar das comunidades rurais." />
     <meta name="keywords" content="glossário, biblioteca, biodiversidade, área de preservação, aquecimento global, efeito estufa, bacias hidrográficas, recursos hídricos, biodiversidade, biomas, cerrado, metano, carbono, hidrogênio, dióxido de carbono, co2, emissão de gas, desenvolvimento sustentável, desflorestamento, efeito de borda, mata atlântica, recomposição florestal, desmatamento, degradação, publicações, vídeo, informativo iniciativa, mata atlântica, recuperação da mata atlântica, notícias, artigos, clipping, meios de comunicação, entrevista, depoimento, Iniciativa Verde, árvores, compensação de carbono, plantio, carbon free, amigos da floresta, área de plantio, projetos ambientais, onde plantamos, onde plantamos, resolução sma-030, resolução sma 8, apoiadores, parceiros, projetos em parceria, redes, organiações, gee, ecomudança, ong iniciativa verde, documentos, equipe, serviços ambientais, Iniciativa Verde, Árvores, Compensação de Carbono, Plantio, Carbon Free, Amigos da Floresta, Área de plantio, Projetos Ambientais, Neutralização de carbono" />
-    <meta name="author" content="Prodweb" />
+    <meta name="author" content="Grupo Fragmentado" />
     
     <meta property="og:title" content="GO GREEN!" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.go-green.ml" />
-	<meta property="og:image" content="http://www.iniciativaverde.org.br/site/img/marca-redes-compartilhamento.jpg" />
-    <meta property="og:site_name" content="Iniciativa Verde" />
+	  <meta property="og:image" content="http://www.iniciativaverde.org.br/site/img/marca-redes-compartilhamento.jpg" />
+    <meta property="og:site_name" content="Go Green" />
     <meta property="og:description" content="A Go Green! é uma organização do terceiro setor que busca contribuir para a melhoria dos serviços ambientais como biodiversidade, água e qualidade do ar. Com isso, ela ajuda na mitigação e na adaptação às mudanças climáticas causadas pelas atividades humanas por meio de projetos próprios de recomposição florestal e em parceria com outras instituições. A Iniciativa Verde acredita na importância da consistência e da atualização científica, direcionando seu trabalho para a geração e à difusão de conhecimento e também ao apoio à formulação e implementação de políticas públicas que sejam capazes de garantir a conservação dos ecossistemas naturais e o bem-estar das comunidades rurais." />
 
   <link rel="stylesheet" href="css\estilo.css">
@@ -32,47 +32,55 @@
   <body> 
     
     <img src="img\banner.jpg" width="100%">
-      
-      <div class="dropdown">
-            <button class="dropbtn"><a href="index.html">Home</a></button>
-      </div>
-        
-    <div class="dropdown">
-      	 	<button class="dropbtn">Conteudo</button>
-    			   <div class="dropdown-content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
-					</div>
-	</div>
-      <div class="dropdown">
-        <button class="dropbtn">Quem somos</button>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Sobre</button>
-      </div>
-      <div class="dropdown">
-        <button class= "dropbtn">FAQ</button>
-      </div>
-      <div class="dropdown">
-        <button class= "dropbtn">Contato</button>
-      </div>
 
-  <footer>
-            <div class="logotipo">
+        <nav>
+
+        <label for="drop" class="toggle">MENU</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <!-- Dropdown comum -->
+                    <label for="drop-1" class="toggle">+ Projetos</label>
+                    <a href="#">Projetos</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="#">A água</a></li>
+                        <li><a href="#">Inovação</a></li>
+                        <li><a href="#">Indústria</a></li>
+                    </ul> 
+
+                </li>
+                <li>
+
+                <!-- Dropdown comum -->
+                <label for="drop-2" class="toggle">+ Sociedade</label>
+                <a href="#">Sociedade</a>
+                <input type="checkbox" id="drop-2"/>
+                <ul>
+                    <li><a href="#">Coisas</a></li>
+                    <li><a href="#">Links</a></li>
+                </ul>
+                </li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer">
+        <div class="logotipo">
                 <img src="img/logotipo.png">
-                Go Green! - Sustentabilidade ® 2018
-            </div>
+                Go Green! - Sustentabilidade © 2018
+        </div>
+            
             <nav class="redes">
                 <ul>
-                    <li><a href="https://www.facebook.com/embuscadocodigo" target="_blank"><img src="img/facebook.png" alt="Nosso Facebook"></a></li>
-                    <li><a href="https://plus.google.com/115289918651298518386" target="_blank"><img src="img/google.png" alt="Nosso Google plus"></a></li>
-                    <li><a href="https://www.youtube.com/channel/UC6EgJeCFC-P96Y0Gvla0Z3w" target="_blank"><img src="img/youtube.png" alt="Canal no YouTube"></a></li>
-                    <li><a href="https://www.instagram.com/embuscadocodigo/" target="_blank"><img src="img/instagram.png" alt="Perfil no Instagram"></a></li>
-                    <li><a href="https://www.twitter.com/embuscadocodigo/" target="_blank"><img src="img/twitter.png" alt="Perfil no Twitter"></a></li>
-               </ul>
-            </nav>
-        </footer>
+                      <li><a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Nosso Facebook"></a></li>
+                  
+                </ul>
+             </nav>
+            </div>
   </body>
 
 </html>

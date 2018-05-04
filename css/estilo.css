@@ -13,8 +13,8 @@ body {
     padding: 0;
     word-wrap:break-word !important;
     font-family: 'Open Sans', sans-serif;
-    }
 
+    }
 /* Testes de fonts e conteúdos do site. */
 h1 {
     font-size: 60px;
@@ -55,7 +55,9 @@ h1 {
 }
 
 p {
-    text-align: center;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .toggle,

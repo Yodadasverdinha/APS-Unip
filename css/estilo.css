@@ -277,8 +277,7 @@ li > a:only-child:before { content: ''; }
 }
 
 @media (max-height:800px){
-    .footer { position: static; }
-    header { padding-top:40px; }
+    .rodape-distribuido { position: static; }
 }
 
 .rodape-distribuido{
@@ -412,13 +411,13 @@ li > a:only-child:before { content: ''; }
 
 .rodape-distribuido .rodape-icones a{
     display: inline-block;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
-    background-color:  #33383b;
+    background-color: #33383b;
     border-radius: 2px;
 
-    font-size: 20px;
+    font-size: 25px;
     color: #ffffff;
     text-align: center;
     line-height: 35px;
